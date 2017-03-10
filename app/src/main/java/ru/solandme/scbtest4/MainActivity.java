@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             isNeedShowDialog = savedInstanceState.getBoolean("isNeedShowDialog");
             delPosition = savedInstanceState.getInt("position");
 
-            showDeleteDialog(delPosition);
+            if (isNeedShowDialog) showDeleteDialog(delPosition);
         } else {
             catNames = new ArrayList<>(Arrays.asList("Рыжик", "Барсик", "Мурзик", "Мурка", "Васька",
                     "Томасина", "Кристина", "Пушок", "Дымка", "Кузя",
